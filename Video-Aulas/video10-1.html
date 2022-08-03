@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando</title>
+
+<style>
+.area {
+    text-align: center;
+    background: red;
+    width: 200px;
+    height: 200px;
+    color: white;
+    line-height: 200px;
+}
+
+.area:hover {
+    color: black;
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+    <div class="area" id="area" onclick="clicar()" onmouseleave="entrar()" onmousemove="mexer()">
+    interaja
+    </div>
+
+
+</body>
+<script>
+    var area = window.document.getElementById("area"); //pôs fora pra poder servir pra todas as funções a seguir
+    function clicar(){
+        area.innerHTML = "clicou"
+    }
+    function entrar() {
+        area.innerHTML = 'Entrou'
+    }
+    function mexer() {
+        area.innerHTML = 'Mexeu'
+
+    }
+
+
+</script>
+</html>

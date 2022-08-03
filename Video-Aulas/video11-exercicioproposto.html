@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    
+<h1>País</h1> <p><input type="text" class="pais">
+<input type="button" value= procurar class="pais" onclick="verPais()">
+<div class="lugar"></div>
+
+</body>
+
+<script> 
+
+addEventListener
+
+function verPais() {
+
+    var local = window.document.querySelector('.pais')
+    var lugar = window.document.querySelector('.lugar')
+    var place = String(local.value)
+    lugar.innerHTML = `Seu país selecionado foi: ${place}`
+if (place !== 'Brasil') {
+    lugar.innerHTML += `<p>Você é estrangeiro</p>`
+} else {
+    lugar.innerHTML += `<p> Você é br </p>`
+}
+}
+
+
+// quando ponho brasil em letra minuscula nao reconhece
+
+
+</script>
+
+
+
+</html>
